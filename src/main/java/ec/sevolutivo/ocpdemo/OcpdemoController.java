@@ -9,7 +9,7 @@ public class OcpdemoController {
 
     @GetMapping("/hello/{name}")
     public String sayHello(@PathVariable String name) {
-        return "Hi " + name;
+        return "v1: Hi " + name;
     }
 
 }
