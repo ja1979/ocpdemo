@@ -1,0 +1,16 @@
+kind: LocalConfig
+apiversion: odo.dev/v1alpha1
+ComponentSettings:
+  Type: java:8
+  SourceLocation: target/ocpdemo-0.0.1-SNAPSHOT.jar
+  SourceType: binary
+  Ports:
+  - 8080/TCP
+  - 8443/TCP
+  - 8778/TCP
+  Application: app
+  Project: odo-bin
+  Name: ocpdemo
+  Url:
+  - Name: ocpdemo-8080
+    Port: 8080
